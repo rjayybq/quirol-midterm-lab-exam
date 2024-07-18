@@ -9,6 +9,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('user', UserController::class);
+Route::resource('users', UserController::class);
 Route::resource('post', PostController::class);
 Route::resource('comment', CommentController::class);
