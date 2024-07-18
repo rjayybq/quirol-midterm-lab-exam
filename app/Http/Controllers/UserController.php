@@ -13,7 +13,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return User::all();
+        return User::whereIn('id', [1,3,5,7,9,11])->get();
+        
     }
 
     /**
